@@ -1,0 +1,119 @@
+<!-- <% layout("/layouts/boilerplate")%>
+
+<div class="row mt-3">
+<div class="col-8 offset-2">
+
+
+    <h3>Edit your listing</h3>
+   <form method="POST" action="/listings/<%=listing._id %>?_method=PUT " novalidate class="needs-validation">
+    <div class="mb-3">
+ <label for="title" class="form-label">Title</label>       
+<input name="listins[title]" value="<%= listing.title %>" type="text" class="form-control"  required/>
+<div class="invalid-feedback"> enter valid title</div>
+
+</div>
+<br>
+<div class="mb-3">
+<label for="description" class="form-label">Title</label>
+<textarea name="listing[description]" class="form-control" required>value="<%= listing.description %>"  
+<div class="invalid-feedback"> enter valid description</div>
+
+
+</textarea>
+
+</div>
+<br>
+<div class="mb-3">
+<label for="Image" class="form-label">Image URL/link</label>
+<input name= "listing[image]" value="<%= listing.image %>" type="text" class="form-control" required>
+<div class="invalid-feedback"> enter image</div>
+
+</div>
+<br>
+<div class="row" class="col-md-4">
+
+<label for="price" class="form-label">Price</label>
+<input name="listing[price]" value="<%= listing.price %>" type="number" class="form-control" required />
+<div class="invalid-feedback"> enter valid price</div>
+
+
+<br>
+<div class="mb-3" class="col-md-8">
+    <label for="country" class="form-label">country</label>
+<input name="listing[country]" value="<%= listing.country %>" type= "text" class="form-control" required>
+<div class="invalid-feedback"> enter valid country</div>
+
+</div> 
+</div>
+<br>
+<div class="mb-3">
+<label for="location" class="form-label">Location</label>   
+<input name="listing[location]" value="<%= listing.location %> "type="text" class="form-control" required>
+<div class="invalid-feedback"> enter valid locationn</div>
+
+</div>
+
+<br>
+<button class="btn btn-dark edit-btn">Edit</button>
+   </form> 
+</div>
+</div>
+<script src="/js/index.js"></script> -->
+
+
+
+
+<div class="row mt-3">
+  <div class="col-8 offset-2">
+    <h3>Edit your listing</h3>
+
+    <form method="POST" action="/listings/<%= listing._id %>?_method=PUT" novalidate class="needs-validation">
+      
+      <!-- Title -->
+      <div class="mb-3">
+        <label for="title" class="form-label">Title</label>
+        <input name="listing[title]" value="<%= listing.title %>" type="text" class="form-control" required />
+        <div class="invalid-feedback">Enter valid title</div>
+      </div>
+
+      <!-- Description -->
+      <div class="mb-3">
+        <label for="description" class="form-label">Description</label>
+        <textarea name="listing[description]" class="form-control" required><%= listing.description %></textarea>
+        <div class="invalid-feedback">Enter valid description</div>
+      </div>
+
+      <!-- Image URL -->
+      <div class="mb-3">
+        <label for="image" class="form-label">Image URL / link</label>
+        <input name="listing[image]" value="<%= listing.image?.url %>" type="text" class="form-control" required>
+        <div class="invalid-feedback">Enter image URL</div>
+      </div>
+
+      <!-- Price -->
+      <div class="mb-3">
+        <label for="price" class="form-label">Price</label>
+        <input name="listing[price]" value="<%= listing.price %>" type="number" class="form-control" required />
+        <div class="invalid-feedback">Enter valid price</div>
+      </div>
+
+      <!-- Country -->
+      <div class="mb-3">
+        <label for="country" class="form-label">Country</label>
+        <input name="listing[country]" value="<%= listing.country %>" type="text" class="form-control" required>
+        <div class="invalid-feedback">Enter valid country</div>
+      </div>
+
+      <!-- Location -->
+      <div class="mb-3">
+        <label for="location" class="form-label">Location</label>
+        <input name="listing[location]" value="<%= listing.location %>" type="text" class="form-control" required>
+        <div class="invalid-feedback">Enter valid location</div>
+      </div>
+
+      <button class="btn btn-dark edit-btn">Edit</button>
+    </form>
+  </div>
+</div>
+
+<script src="/js/script.js"></script>
