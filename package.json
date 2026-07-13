@@ -2,17 +2,17 @@
   "name": "major-project",
   "version": "1.0.0",
   "main": "app.js",
- "scripts": {
-  "start": "node app.js",
-  "dev": "nodemon app.js"
-},
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "description": "",
   "dependencies": {
     "@types/passport-local": "^1.0.38",
-    "cloudinary": "^2.10.0",
+    "cloudinary": "^1.41.3",
     "connect": "^3.7.0",
     "connect-flash": "^0.1.1",
     "cookie": "^1.1.1",
