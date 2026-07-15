@@ -8,9 +8,9 @@ const userController = require("../controllers/users.js")
 
 
 
-// router.get("/", (req, res) => {
-//     res.redirect("/listings");
-// });
+router.get("/", (req, res) => {
+    res.redirect("/listings");
+});
 
 
 router.get("/signup",userController.renderSignup);

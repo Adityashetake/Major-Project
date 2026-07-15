@@ -1,0 +1,1 @@
+EJS templating with the `layout()` helper (from `express-ejs-layouts` or equivalent) plus Bootstrap 5.3 CSS/JS, Font Awesome 7, and Google Fonts loaded from CDN.

@@ -1,0 +1,1 @@
+Express + EJS (with ejs-mate) for views; Passport LocalStrategy with connect-mongo session store; Joi for request-body validation; Cloudinary v2 via multer-storage-cloudinary for image uploads; dotenv for environment loading.

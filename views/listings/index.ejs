@@ -45,58 +45,53 @@
 }
    </style>
 <div id="filters" name="category">
-<div class="filter" >
+<div class="filter" onclick="window.location.href='/listings/category/Trending'">
 <div><i class="fa-solid fa-fire"></i></div>
 <p>Trending</p>
 </div>
-<div class="filter">
+<div class="filter" onclick="window.location.href='/listings/category/Rooms'">
 <div><i class="fa-solid fa-bed"></i></div>
 <p>Rooms</p>
 </div>
 
-
-
-<div class="filter">
+<div class="filter" onclick="window.location.href='/listings/category/Iconic%20Cities'">
 <div><i class="fa-solid fa-mountain-city"></i></div>
-<p>iconic cities</p>
+<p>Iconic Cities</p>
 </div>
-<div class="filter">
+<div class="filter" onclick="window.location.href='/listings/category/Mountain'">
 <div><i class="fa-solid fa-mountain"></i></div>
 <p>Mountain</p>
 </div>
 
-
-
-<div class="filter">
+<div class="filter" onclick="window.location.href='/listings/category/Castle'">
 <div><i class="fa-brands fa-fort-awesome"></i></div>
 <p>Castle</p>
 </div>
-<div class="filter">
+<div class="filter" onclick="window.location.href='/listings/category/Pools'">
 <div><i class="fa-solid fa-person-swimming"></i></div>
-<p>Swimming pools</p>
+<p>Pools</p>
 </div>
 
-<div class="filter">
+<div class="filter" onclick="window.location.href='/listings/category/Farms'">
 <div><i class="fa-solid fa-tractor"></i></div>
-<p>farms</p>
+<p>Farms</p>
 </div>
-<div class="filter">
+<div class="filter" onclick="window.location.href='/listings/category/Arctic'">
 <div><i class="fa-solid fa-snowflake"></i></div>
 <p>Arctic</p>
 </div>
 
-
-<div class="filter">
+<div class="filter" onclick="window.location.href='/listings/category/Beach'">
 <div><i class="fa-solid fa-umbrella-beach"></i></div>
 <p>Beach</p>
 </div>
-<div class="filter">
+<div class="filter" onclick="window.location.href='/listings/category/Yacht'">
 <div><i class="fa-solid fa-ship"></i></div>
-<p>yatch</p>
+<p>Yacht</p>
 </div>
-<div class="filter">
+<div class="filter" onclick="window.location.href='/listings/category/Domes'">
 <div><i class="fa-solid fa-igloo"></i></div>
-<p>domes</p>
+<p>Domes</p>
 </div>
 
 <div class="tax-toggle">
@@ -105,19 +100,17 @@
   <label class="form-check-label" for="switchCheckDefault">Display Taxes</label>
 </div></div>
 
-
-
 </div>
 
 
 
-  <div class="row row-cols-lg-3 row-cols-md-2 row-cols-sm-1  mt-3">
+  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-3 mt-3">
     <% for (let listing of allListings) { %>
       <a href="/listings/<%= listing._id %>" class="listing_link">
-        <div class="card col listing-card" style="width: 26rem;">
+        <div class="card col listing-card">
           
       
-            <img src="<%= listing.image.url %>" class="card-img-top" alt="listing_image" style="height: 20rem;">
+            <img src="<%= listing.image.url %>" class="card-img-top listing-img" alt="listing_image">
          
           
          <div class="card-img-overlay"> </div>
@@ -149,3 +142,19 @@ for(info of taxinfo){
 
   });
 </script>
+
+<style>
+@media (max-width: 576px) {
+  #filters {
+    justify-content: center;
+    gap: 0.5rem;
+  }
+  .filter {
+    margin-right: 0.5rem !important;
+  }
+  .tax-toggle {
+    margin-left: 0 !important;
+    margin-top: 1rem !important;
+  }
+}
+</style>

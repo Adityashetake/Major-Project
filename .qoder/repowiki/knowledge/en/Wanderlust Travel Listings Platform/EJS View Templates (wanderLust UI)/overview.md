@@ -1,0 +1,1 @@
+Server-rendered EJS templates for the wanderLust travel-listings site, organized by layout, shared partials, and feature-area views.

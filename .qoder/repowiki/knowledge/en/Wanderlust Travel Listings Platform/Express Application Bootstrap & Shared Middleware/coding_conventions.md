@@ -1,0 +1,4 @@
+- Validation errors are normalized by mapping Joi `error.details[].message` into a comma-joined string and thrown as `new ExpressError(400, errmsg)` so a single error-handling middleware can render them.
+- Authentication/authorization redirects preserve the original URL via `req.session.redirectUrl` and surface flash messages through `req.flash()` before issuing `res.redirect(...)`.
+- Cross-request context is propagated through `res.locals` (e.g. `res.locals.currUser`, `res.locals.success`, `res.locals.error`, `res.locals.redirectUrl`) rather than passed per-route.
+- External service configuration (Cloudinary, DB, secrets) is read exclusively from `process.env` variables, never hard-coded.

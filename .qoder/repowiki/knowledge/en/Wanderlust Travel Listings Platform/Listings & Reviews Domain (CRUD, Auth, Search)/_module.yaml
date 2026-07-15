@@ -1,0 +1,10 @@
+schema_version: 1
+module_path: domain_listings_reviews
+title: Listings & Reviews Domain (CRUD, Auth, Search)
+scope:
+    - controllers/
+    - models/
+    - routes/
+source_files: []
+depends_on: []
+related_to: []

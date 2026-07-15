@@ -81,6 +81,13 @@ object-fit: cover !important;
 
 }
 
+.listing-img {
+  height: 20rem;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 1rem !important;
+}
+
 .card-body{
 
     padding:0 !important;
@@ -97,8 +104,114 @@ font-weight: 400;
 
     text-decoration: none;
 }
-/* 
-card effect */
+/* Responsive Design - Media Queries */
+
+/* Small devices (phones, less than 768px) */
+@media (max-width: 767.98px) {
+  .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  
+  .show-img {
+    height: 20vh;
+  }
+  
+  .listing-img {
+    height: 15rem;
+  }
+  
+  #filters {
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    padding-bottom: 0.5rem;
+    gap: 0.3rem;
+    -webkit-overflow-scrolling: touch;
+  }
+  
+  .filter {
+    flex: 0 0 auto;
+    margin-right: 0.5rem !important;
+  }
+  
+  .tax-toggle {
+    margin-left: 0 !important;
+    margin-top: 1rem !important;
+    padding: 0.5rem 1rem !important;
+    height: auto !important;
+  }
+  
+  .f-info {
+    height: auto;
+    padding: 1rem 0;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .navbar-brand i.fa-compass {
+    font-size: 1.5rem;
+  }
+  
+  .search-inp {
+    width: 100%;
+    margin-bottom: 0.5rem;
+  }
+  
+  .d-flex[role="search"] {
+    flex-direction: column;
+    align-items: stretch !important;
+  }
+  
+  .map-container iframe {
+    height: 200px !important;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .listing-img {
+    height: 18rem;
+  }
+  
+  .show-img {
+    height: 25vh;
+  }
+  
+  #filters {
+    justify-content: center;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .listing-img {
+    height: 20rem;
+  }
+}
+
+/* Extra small devices (phones, less than 576px) */
+@media (max-width: 575.98px) {
+  .show-card {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    width: 100% !important;
+  }
+  
+  .listing-img {
+    height: 12rem;
+  }
+  
+  .btns .btn {
+    width: 100%;
+    margin: 0.25rem 0 !important;
+  }
+  
+  .btns {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .card-image-overlay{
 opacity:0;
 

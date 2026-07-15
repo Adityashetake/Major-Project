@@ -1,0 +1,3 @@
+- Every feature view opts into the shared shell by declaring `<% layout("/layouts/boilerplate") %>` as its first line instead of duplicating HTML boilerplate.
+- Shared fragments live under `includes/` and are pulled in from the layout using relative `<%-include("../includes/<name>.ejs") %>` paths rather than absolute ones.
+- View file names mirror route segments (e.g. `listings/index.ejs` ↔ `/listings`, `users/login.ejs` ↔ `/login`), so template location can be inferred from the URL path.

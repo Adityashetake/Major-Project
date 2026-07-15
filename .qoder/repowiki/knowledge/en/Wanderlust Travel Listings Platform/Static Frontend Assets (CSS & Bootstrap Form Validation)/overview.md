@@ -1,0 +1,1 @@
+Served static stylesheets and a small vanilla-JS snippet that bootstrap the site's layout, listing cards, responsive breakpoints, and a pure-CSS star-rating widget.

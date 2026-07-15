@@ -1,0 +1,1 @@
+Express Router + Mongoose ODM + passport-local-mongoose for local authentication + Multer with cloud storage for image uploads + EJS view rendering.

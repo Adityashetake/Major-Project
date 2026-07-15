@@ -1,0 +1,11 @@
+schema_version: 1
+module_path: app_core
+title: Express Application Bootstrap & Shared Middleware
+scope:
+    - app.js
+    - middleware.js
+    - cloudConfig.js
+    - Schema.js
+source_files: []
+depends_on: []
+related_to: []

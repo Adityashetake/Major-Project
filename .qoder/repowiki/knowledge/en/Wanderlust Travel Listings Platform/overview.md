@@ -1,0 +1,1 @@
+Monorepo entrypoint that boots a single Express server, mounting the app-core bootstrap, domain route modules, EJS view templates, and static frontend assets under one Node process.

@@ -1,0 +1,1 @@
+Node ≥18 with Express 5, Mongoose 8 for MongoDB persistence, Passport + passport-local-mongoose for session-based auth, EJS + ejs-mate for server-side templating, Multer + multer-storage-cloudinary for image upload to Cloudinary, Joi for request validation, connect-flash for flash messages, and nodemon for development hot-reload.

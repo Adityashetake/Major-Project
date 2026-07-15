@@ -1,0 +1,66 @@
+# 知识卡导出索引文件
+schema_version: 1
+locale: en-US
+branch: main
+nodes_managed: true
+exported_at: "2026-07-15T18:58:48Z"
+modules:
+    "":
+        dir_name: Wanderlust Travel Listings Platform
+        title: Wanderlust Travel Listings Platform
+        scope:
+            - README.md
+            - .gitignore
+            - package.json
+            - package-lock.json
+        source_files: []
+        children:
+            - app_core
+            - domain_listings_reviews
+            - frontend_assets
+            - views_templates
+        depends_on: []
+        related_to: []
+    app_core:
+        dir_name: Express Application Bootstrap & Shared Middleware
+        title: Express Application Bootstrap & Shared Middleware
+        scope:
+            - app.js
+            - middleware.js
+            - cloudConfig.js
+            - Schema.js
+        source_files: []
+        children: []
+        depends_on: []
+        related_to: []
+    domain_listings_reviews:
+        dir_name: Listings & Reviews Domain (CRUD, Auth, Search)
+        title: Listings & Reviews Domain (CRUD, Auth, Search)
+        scope:
+            - controllers/
+            - models/
+            - routes/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to: []
+    frontend_assets:
+        dir_name: Static Frontend Assets (CSS & Bootstrap Form Validation)
+        title: Static Frontend Assets (CSS & Bootstrap Form Validation)
+        scope:
+            - public/css/js/index.js
+            - public/css/style.css
+            - public/css/rating.css
+        source_files: []
+        children: []
+        depends_on: []
+        related_to: []
+    views_templates:
+        dir_name: EJS View Templates (wanderLust UI)
+        title: EJS View Templates (wanderLust UI)
+        scope:
+            - views/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to: []

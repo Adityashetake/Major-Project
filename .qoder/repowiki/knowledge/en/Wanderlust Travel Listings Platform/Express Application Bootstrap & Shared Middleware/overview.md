@@ -1,0 +1,1 @@
+Bootstraps the Express server, wires Passport sessions backed by MongoDB, mounts route modules, and exposes shared middleware plus Joi validation schemas used across controllers.

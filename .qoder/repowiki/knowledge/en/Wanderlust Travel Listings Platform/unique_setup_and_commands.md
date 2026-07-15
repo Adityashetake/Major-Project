@@ -1,0 +1,1 @@
+`npm start` runs `node app.js`; `npm run dev` runs `nodemon app.js` to auto-restart on file changes. A `.env` file is expected at the repo root (loaded via dotenv) for secrets such as MongoDB URI and Cloudinary credentials.
