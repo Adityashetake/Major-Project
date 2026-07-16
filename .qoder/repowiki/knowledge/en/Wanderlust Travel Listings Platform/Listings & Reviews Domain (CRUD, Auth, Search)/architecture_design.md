@@ -1,6 +1,0 @@
-Three-layer MVC split inside the module:
-- `routes/` — Express routers that compose middleware (`isLoggedin`, `isOwner`, `validateListing`, `validateReview`, `saveRedirectUrl`) from `../middleware.js`, wrap controller calls with `wrapAsync`, mount Multer via `cloudConfig.storage` for image uploads, and export a router per resource. The reviews router uses `{mergeParams:true}` so it can nest under `/listings/:id/reviews`.
-- `controllers/` — plain functions receiving `(req,res)`; they read `req.user._id` to set ownership, call model methods, flash success/error messages, and `res.render` EJS views or `res.redirect`. Controllers never touch DB directly beyond calling models.
-- `models/` — Mongoose schemas exported as singletons: `listing.js` owns an embedded `reviews` ObjectId array and an `owner` ref to `User`; `review.js` holds comment/rating/createdAt/author refs; `user.js` augments its schema with `passport-local-mongoose` for local auth.
-
-Dependency direction is strictly routes → controllers → models; cross-resource coupling exists only through Mongoose `ref`s (Listing→Review, Review→User). Validation schemas live in `../Schema.js` and are imported by routes rather than defined here.

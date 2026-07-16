@@ -1,1 +1,0 @@
-Vanilla ES6+ JavaScript (IIFE + `querySelectorAll`) and plain CSS with CSS custom properties; relies on Bootstrap's client-side validation classes (`needs-validation`, `was-validated`) and Font Awesome icons (`fa-compass`).

@@ -1,3 +1,0 @@
-- Global layout rules target Bootstrap page scaffolding classes (`.container`, `.navbar`, `.card-body`, `.card-img-top`) rather than element selectors, keeping overrides scoped to the framework's markup.
-- Responsive behavior is expressed as separate `@media` blocks keyed to Bootstrap's breakpoint values (575.98px, 767.98px, 991.98px) instead of a mobile-first cascade.
-- Reusable UI components are isolated into their own stylesheet (e.g. `rating.css` for the star rating) with a unique BEM-like prefix (`starability-*`) to avoid leaking into the global namespace.

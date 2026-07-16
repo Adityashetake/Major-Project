@@ -1,5 +1,0 @@
-Three independent leaf assets under `public/`, consumed directly by server-rendered templates with no build step:
-- `style.css` — global layout overrides for the Plus Jakarta Sans font, navbar, footer (`f-info-*`), listing card images, and four breakpoint media queries (≤576px, ≤768px, ≤992px, ≥992px) plus utility classes like `.add-btn`, `.edit-btn`, `.show-img`, `.btns`.
-- `rating.css` — self-contained pure-CSS star rating component using hidden radio inputs, sibling selectors, and base64-encoded sprite sheets; supports both normal and high-DPI sprites via a `min-resolution: 192dpi` query, and falls back to visible native radios in MS High Contrast mode.
-- `js/index.js` — an IIFE that iterates every `.needs-validation` form, calls `form.checkValidity()` on submit, prevents default when invalid, and toggles Bootstrap's `.was-validated` class so the framework's built-in validation feedback renders.
-Dependency direction is one-way: JS depends only on Bootstrap's DOM API and CSS class names; CSS files are independent of each other.

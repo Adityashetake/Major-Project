@@ -1,5 +1,0 @@
-- Route handlers are wrapped with `wrapAsync()` before being passed to Express, so async controller errors bubble to the app-level error handler instead of rejecting unhandled.
-- Authorization is enforced declaratively in route stacks using reusable middleware (`isLoggedin`, `isOwner`, `isReviewAuthor`) rather than ad-hoc checks inside controllers.
-- Controller functions are attached to the module object as named exports (`module.exports.index = ...`) and referenced by name from routes, keeping each file's API explicit.
-- User identity is injected via `req.user._id` (set by passport) and assigned to `owner` / `author` fields at write time, centralizing ownership logic in controllers.
-- Flash messages are emitted via `req.flash('success'|'error', msg)` after mutations and followed by `res.redirect`, never by returning JSON.

@@ -1,1 +1,0 @@
-Express route/controller/model layer for user accounts, listing CRUD with image upload, and nested review creation/deletion backed by Mongoose.
